@@ -14,7 +14,7 @@ def minOperations(n):
     pf = 2 # Here we start with the lowest prime factor 2
     op = 0 # op Gets the number of operations
 
-    while (pf * pf <= n): 
+    while pf * pf <= n: 
         if n % pf == 0: # This checks for all the prime factors
             op += pf # adds the factor to operations
             n //= pf # This divides pf to reduce n for the next iteratio
@@ -23,3 +23,4 @@ def minOperations(n):
     if n > 1: # Adds the remaining prime factors of n
         op += n
     return op
+

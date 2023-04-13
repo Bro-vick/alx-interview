@@ -1,10 +1,10 @@
 #!/usr/bin/python3
-""" 
+"""
 This script that reads stdin line by line and computes metrics
 steps:
-1) read from the stdin for line in stdin, 
+1) read from the stdin for line in stdin,
 2) check if format is , else skip
-3) Declare a counter variable that increments, 
+3) Declare a counter variable that increments,
 4) check if the counter is 10,
 calculate
 5) Declare a dictionary for storing the status codes
@@ -16,10 +16,13 @@ calculate
 """
 
 def parseLogs():
+
+
     """
     Reads logs from standard input and generates reports
     Reports:
-        * Prints log size after reading every 10 lines & at KeyboardInterrupt
+        * Prints log size after reading every 10 lines 
+        & at KeyboardInterrupt
     Raises:
         KeyboardInterrupt (Exception): handles this exception and raises it
     """
@@ -54,7 +57,8 @@ def report(fileSize, statusCodes):
     """
     This function Prints generated report to standard output
     Args:
-        fileSize (int): This is the total log size after every 10 successfully read line
+        fileSize (int): This is the total log size after
+        every 10 successfully read line
         statusCodes (dict): The dictionary of status codes and counts
     """
     print("File size: {}".format(fileSize))

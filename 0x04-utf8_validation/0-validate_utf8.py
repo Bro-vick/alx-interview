@@ -6,6 +6,9 @@ UTF-8 encoding.
 """
 
 def validUTF8(data):
+    """
+    utf-8 validation
+    """
     # Loop through each byte in the data list
     i = 0
     while i < len(data):

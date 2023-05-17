@@ -4,12 +4,12 @@
     to meet a given total
 """
 
+
 def makeChange(coins, total):
     """
     This function will take a list of coins and then
     calculate how much change the total will require
     """
-    
     if total <= 0:
         return 0
 
